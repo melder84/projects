@@ -1,0 +1,202 @@
+/* styles.css */
+
+body {
+    background-color: #fff4e2; /* Your specified background color */
+		
+}
+header {
+  background-image: url('C:\Users\MElder\Desktop\web\cleaning2.jpg'); /* Adjust with your actual image path */
+  opacity: 0.5;
+  background-size: cover;  /* This will make sure your image covers the entire header */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the image within the header */
+}
+@font-face {
+  font-family: 'font'; /* Define a name for your font */
+  src: url('C:\Users\MElder\Desktop\web\fonts\font2.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  
+  /* Add other properties if necessary */
+}
+
+@font-face {
+  font-family: 'font2'; /* Define a name for your font */
+  src: url('C:\Users\MElder\Desktop\web\fonts\adelia.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  
+  /* Add other properties if necessary */
+}
+
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+	z-index: 1001;
+}
+
+.navbar-logo {
+  height: 50px;  /* or whatever size you want */
+  width: auto;  /* maintains aspect ratio */
+}
+
+
+.navbar-header {
+  display: flex;
+  flex-direction: column; /* stacks the children (brand and subtitle) vertically */
+  align-items: center; /* centers them on the cross axis */
+  justify-content: center; /* centers them on the main axis */
+}
+  
+/* CSS */
+.navbar-brand {
+  /* Your previous styles, and ensure it's centered */
+  margin-bottom: 0; /* Reset the bottom margin if needed */
+  align-self: center; /* Center the brand */
+  font-family: 'font';
+  font-size: 2rem;
+  color: #E1C16E;
+}
+
+/* Handle the container's layout */
+.container-fluid {
+  flex-direction: column; /* Stack the brand and nav links */
+}
+
+/* Centering the navbar links */
+.navbar-nav {
+  flex-direction: row; /* Align links in a row */
+  justify-content: center; /* Center the links */
+  width: 100%; /* Full width to use the space */
+}
+.navbar-nav .nav-link {
+  font-family: 'Allison' !important; 
+  font-size: 40px/* Replace with your font name, keep a fallback */
+}
+.nav-item {
+  /* Reset float if it's set by Bootstrap */
+  float: none;
+ 
+}
+.navbar-subtitle {
+  font-size: 1rem; /* smaller than the title, for example */
+  font-family: 'font';
+}
+.brand-image {
+    max-height: 80px; /* limits the image height */
+    width: auto; /* maintains aspect ratio */
+     /* optional: adds some space between your brand text and image */
+}
+
+#contact-form {
+    display: block; /* changed from 'none' */
+    position: fixed; /* Make it overlay */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #9F8170 !important; /* Semi-transparent white */
+    z-index: 1000; /* Make sure it's on top */
+    padding: 50px; /* Add some padding */
+    box-sizing: border-box; /* So padding doesn't affect overall width/height */
+    transition: transform 0.3s ease-in-out; /* Smooth sliding effect */
+    transform: translateY(-100%); /* Start position (hidden) */
+	
+}
+
+#contact-form.open {
+    transform: translateY(0); /* End position (visible) */
+}
+
+		
+.form-group {
+	font-family: 'font';
+	
+}
+
+.responsive-image {
+    width: 100%;  /* Make sure the image is no wider than the container */
+    height: auto;  /* Allow the height to auto-adjust for the aspect ratio */
+    max-width: 100%;  /* This will make the image responsive to its container */
+    max-height: 100%; 
+		/* Optional: this will make sure the image is no taller than the container */
+}
+.main-content {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    /* Adjust the padding-top value for different aspect ratios */
+}
+
+.main-content .responsive-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Similar behavior to 'background-size: cover' */
+}
+#features-page {
+    display: none; /* Start as hidden */
+    position: absolute; /* Important: This takes the element out of the document flow */
+    top: 0; /* This assumes your header is 50px high, adjust accordingly */
+    left: 0;
+    right: 0; /* ensures it stretches to the right edge */
+    bottom: 0; /* stretches to the bottom of the viewport or container */
+    background: #9F8170; /* Use any background you prefer */
+    z-index: 1000; /* Keep it on top */
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* The transition effect */
+    transform: translateY(-100%); /* Start position, off-screen */
+}
+
+#features-page.open {
+    display: block; /* Now it's visible */
+    transform: translateY(0); /* End position, now on-screen */
+}
+
+.centered-content {
+	
+	padding: 0;
+    height: 100%; /* occupy full height of its parent */
+    width: 100%; /* occupy full width of its parent */
+}
+
+/* If you need specific styles for the h1 */
+.centered-content h1 {
+    position: absolute;
+    top: 10%; /* Position at the vertical center of the parent */
+    left: 50%; /* Position at the horizontal center of the parent */
+    transform: translate(-50%, -50%); /* Adjust for the element's own dimensions */
+    margin: 0; 
+    font-family: 'Allison' !important; 
+    font-size: 150px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Initially hide the images */
+    transition: opacity 1s ease-in-out; /* Add a transition for opacity */
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* makes the navbar full width on small screens */
+    }
+}
+
+
+  
+
+
+
+/* Adjust the margins or padding as necessary to space your elements */
+

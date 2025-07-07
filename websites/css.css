@@ -1,0 +1,60 @@
+/* Apply default box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff4e2; /* Creamy background */
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif; /* Apply a default font */
+}
+
+/* Style the header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Style the main content */
+main {
+    margin: 15px;
+    padding: 15px;
+    background: #f4f4f4; /* Light grey background for the content area to differentiate it from the body background */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries - Making the layout responsive */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Add more styles and modify as needed based on the design requirements */
+}

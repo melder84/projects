@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href=
+  "https://femininethemesdemo.com/themes/chicradiant/wp-content/themes/ChicRadiant/fontawesome/webfonts/fa-brands-400.woff2"
+  as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href=
+  "https://femininethemesdemo.com/themes/chicradiant/wp-content/themes/ChicRadiant/fontawesome/webfonts/fa-solid-900.woff2"
+  as="font" type="font/woff2" crossorigin="">
+<style id="simplified-global-styles" type="text/css">
+  /* Core color definitions */
+  :root {
+  --primary-color: #f45840;
+  --secondary-color: #54595F;
+  --text-color: #7A7A7A;
+  --accent-color: #61CE70;
+  
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto Slab", serif;
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  --container-width: 1140px;
+  --spacing: 20px;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  background-color: #fff; /* or any background color you prefer */
+  line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: var(--container-width);
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px; /* or 90-95% for some side spacing on very small screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px; /* or 90-95% for some side spacing on very small screens */
+  }
+}
+
+/* Navigation styles could go here (if you have a navigation menu) */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  line-height: 1.2;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color); /* or --secondary-color or black, etc. */
+}
+</style>
+<style type="text/css">
+  /* Base link styles */
+  a {
+    color: #f45840;
+  }
+
+  a:hover {
+    color: #0a0000;
+  }
+
+  /* Navigation styles */
+  .nav a,
+  .nav ul li.has-sub > a:after,
+  /* other selectors... */ {
+    color: #000000;
+  }
+
+  .nav a:hover,
+  .nav .current-menu-item > a,
+  /* other selectors... */ {
+    color: #f45840;
+  }
+
+  /* Checkbox menu */
+  .checkbox-menu span {
+    background: #000000;
+  }
+
+  /* Mobile menu styles */
+  @media all and (max-width: 768px) {
+    .mobile-menu-lines {
+      /* You have an empty border-color property here. You need to specify a value. */
+      border-color: /* value */;
+    }
+
+    .mobile-menu-lines::before,
+    .mobile-menu-lines::after {
+      /* You have empty background properties here. You need to specify values. */
+      background: /* value */;
+    }
+  }
+
+  /* Button styles */
+  button,
+  .post-button,
+  /* other selectors... */ {
+    background: #f45840;
+    border: 1px solid #f45840;
+    color: #ffffff;
+  }
+
+  button:hover,
+  .post-button:hover,
+  /* other selectors... */ {
+    background: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+  }
+
+  /* Search block styles */
+  .wp-block-search .wp-block-search__button,
+  .wp-block-button__link {
+    background: #f45840;
+    border: #f45840;
+    color: #ffffff;
+  }
+
+  .wp-block-search .wp-block-search__button:hover,
+  .wp-block-button__link:hover {
+    background: #000000;
+    border: #000000;
+    color: #ffffff;
+  }
+
+  /* Additional individual styles... */
+
+  /* Body text color */
+  body {
+    color: #1e1e1e;
+  }
+
+  /* Post styles */
+  .article .post-header:after,
+  .side-widget {
+    border-color: #f9d9d1;
+  }
+
+  .article .page-title,
+  .article .post-title a,
+  .article .post-title a:hover,
+  /* other selectors... */ {
+    color: #222222;
+  }
+
+  /* Widget title styles */
+  .side-widget h2,
+  /* other selectors... */ {
+    color: #222222;
+  }
+
+  /* Additional individual styles... */
+</style>
+
+</head>
+
+<body id="site-top" style="color: #1e1e1e;">
+
+  <!-- Back to top button -->
+  <a href="#site-top" class="back-top" style="color: #f45840;"></a>
+
+  <!-- Header section -->
+  <header>
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Hidden Section -->
+        <div class="d-none">
+          <h1 class="site-title">
+            <a href="https://femininethemesdemo.com/themes/chicradiant" rel="home" style="color: #222222;">A & M CLEANING</a>
+          </h1>
+          <p class="site-description" style="color: #1e1e1e;">Elementor WordPress theme for unshakable entrepreneurs and multi-faceted business owners</p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation and Logo -->
+<nav class="navbar navbar-expand-lg" style="background-color: #f9d9d1;">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="your-logo-link.png" alt="ChicRadiant" />
+    </a>
+
+    <!-- Mobile menu toggle button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background: #f45840; border: 1px solid #f45840; color: #ffffff;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Single menu items -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color: #f45840;">Home</a> <!-- Active item color -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #000000;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #000000;">Services</a>
+        </li>
+        
+        <!-- Dropdown menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color: #000000;">
+            Layout
+          </a>
+          <div class="dropdown-menu">
+            <!-- Dropdown items -->
+            <a class="dropdown-item" href="#" style="color: #000000;">FAQ</a>
+            <a class="dropdown-item" href="#" style="color: #000000;">Testimonials</a>
+            <!-- More dropdown items... -->
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #000000;">Contact</a>
+        </li>
+        <!-- More items... -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="content-section" style="background-color: #f9d9d1; animation: fadeIn;">
+  <div class="container">
+    <!-- Section heading -->
+    <div class="section-heading">
+      <h3 style="color: #000000;">scaling your business</h3>
+    </div>
+    <!-- Main heading -->
+    <div class="main-heading">
+      <h2 style="color: #000000;">Place Your Messaging <em>to</em> Help Dreamy Clients</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  
+  <!-- Each section of content can be placed within Bootstrap's row and column system for proper alignment and distribution -->
+  <div class="row">
+    
+    <!-- Assuming you want the content to span the entire width of the page, you would use 'col-12'. For narrower content, you could use smaller column classes -->
+    <div class="col-12">
+      
+      <!-- Content section: Scaling Your Business -->
+      <!-- 'mb-3' is a Bootstrap class for margin-bottom spacing -->
+      <h3 class="mb-3">Scaling Your Business</h3>
+      
+      <!-- Content section: Place Your Messaging... -->
+      <h2>Place Your Messaging <em>to</em> Help Dreamy Clients</h2>
+      
+      <!-- If you have additional content, like paragraphs or images, continue adding them within this column or create new columns as needed -->
+      
+    </div>
+  </div>
+
+  <!-- You can add more 'row' elements here for additional content sections following the same structure -->
+  
+</div>
+<!-- Begin Bootstrap structure. We'll use a 'container' for a fixed-width or 'container-fluid' for full width. -->
+<div class="container">
+
+  <!-- Bootstrap's grid system is used here to create a new row for your content. -->
+  <div class="row">
+    
+    <!-- 'col' is a class indicating a column, and the use of it without breakpoints allows for full-width on all devices. -->
+    <div class="col">
+
+      <!-- Here's your text content; you can style it further with custom CSS or utility classes from Bootstrap. -->
+      <p>
+        Cupcake ipsum dolor sit amet. Dessert icing cupcake dragée macaroon. Shortbread lemon drops muffin pudding jelly lemon drops tootsie roll. Cake gummies sweet roll jujubes lollipop gummies. Sweet muffin carrot cake pastry pie cotton candy bonbon pastry. Chocolate bar dessert chupa chups caramels cake caramels. Topping icing bonbon muffin lollipop pudding cotton candy liquorice.
+      </p>
+
+      <!-- Bootstrap's button components are used here. Modify 'btn-primary' to another class to change the color, or style it with custom CSS. -->
+      <div class="d-flex justify-content-center"> <!-- 'd-flex' and 'justify-content-center' are used to center the button. -->
+        <a class="btn btn-primary btn-lg" href="https://femininethemesdemo.com/themes/chicradiant/services/" role="button">
+          Let's get started
+        </a>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Begin Bootstrap container. Choose 'container' for fixed-width or 'container-fluid' for full width. -->
+<div class="container">
+
+  <!-- Bootstrap row for structuring the columns -->
+  <div class="row justify-content-center text-center">
+
+    <!-- Bootstrap column taking up 1/3 of the container width on larger screens -->
+    <div class="col-lg-4">
+      <h2>As seen in:</h2>
+    </div>
+
+    <!-- Bootstrap column taking up 1/3 of the container width on larger screens for the first image -->
+    <div class="col-lg-4">
+      <img src="https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1.png" 
+           alt="" 
+           class="img-fluid" 
+           sizes="(max-width: 850px) 100vw, 850px"
+           srcset="https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1.png 850w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1-300x21.png 300w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1-768x54.png 768w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1-720x51.png 720w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-1-600x42.png 600w">
+    </div>
+
+    <!-- Bootstrap column taking up 1/3 of the container width on larger screens for the second image -->
+    <div class="col-lg-4">
+      <img src="https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-2.png" 
+           alt="" 
+           class="img-fluid" 
+           sizes="(max-width: 740px) 100vw, 740px"
+           srcset="https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-2.png 740w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-2-300x24.png 300w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-2-720x58.png 720w,
+                   https://femininethemesdemo.com/themes/chicradiant/files/2023/02/chicradiant-sample-logo-2-600x49.png 600w">
+    </div>
+
+  </div>
+  <!-- End of the Bootstrap row -->
+
+</div>
+<!-- End of the Bootstrap container -->
+<section class="top-section" id="50addb7e">
+  <div class="container column-gap-wider">
+  
+    <!-- First Column -->
+    <div class="column col-33" id="77ee928f">
+      <div class="widget-wrap">
+        <div class="image-widget" id="5e1029d8">
+          <div class="widget-container">
+            <!-- Image details -->
+          </div>
+        </div>
+        <div class="heading-widget" id="69b11da4">
+          <div class="widget-container">
+            <h2><a href="#">Gain Clarity and Build Your Dream Business</a></h2>
+          </div>
+        </div>
+        <div class="button-widget align-center" id="e16f3a0">
+          <div class="widget-container">
+            <a class="button size-md" href="#">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Second Column -->
+    <div class="column col-33" id="16215d26">
+      <div class="widget-wrap">
+        <div class="image-widget" id="15a0a85">
+          <div class="widget-container">
+            <!-- Image details -->
+          </div>
+        </div>
+        <div class="heading-widget" id="60943a70">
+          <div class="widget-container">
+            <h2><a href="#">Grow Your Email List with Dream Clients</a></h2>
+          </div>
+        </div>
+        <div class="button-widget align-center" id="d6bde9e">
+          <div class="widget-container">
+            <a class="button size-md" href="#">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Third Column -->
+    <div class="column col-33" id="2a2696c4">
+      <div class="widget-wrap">
+        <div class="image-widget" id="71cc289a">
+          <div class="widget-container">
+            <!-- Image details -->
+          </div>
+        </div>
+        <div class="heading-widget" id="e89956c">
+          <div class="widget-container">
+            <h2><a href="#">Elevate Your Business to the Next Level</a></h2>
+          </div>
+        </div>
+        <div class="button-widget align-center" id="eeb78ed">
+          <div class="widget-container">
+            <a class="button size-md" href="#">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- Additional rows/columns can be added within the 'container' for more sections of content. -->
+
+</div>
+<!-- End of Bootstrap structure. -->
+
+  <!-- Other content goes here -->
+
+</body>
+</head>

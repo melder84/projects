@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & M  SISTERS CLEANING CO.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for your page -->
+    <link rel="stylesheet" href="css2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Centered website title with nav-links underneath -->
+    <header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid d-flex flex-column align-items-center">
+    <div class="navbar-header">
+      <!-- Brand -->
+      <a class="navbar-brand mb-0 h1" href="#">A & M  SISTERS CLEANING CO.</a> 
+      <img src="C:\Users\MElder\Desktop\web\header2.png" alt="Description" class="brand-image">
+      <span class="navbar-subtitle">ECO CLEANERS</span>
+    </div>
+
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" id="home-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features" id="features-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="contact-link">Contact</a>
+        </li>
+      </ul>
+    </div>  <!-- This closing tag matches the opening div for 'navbar-collapse' -->
+  </div>  <!-- This closing tag matches the opening div for 'container-fluid' -->
+</nav>
+
+    </header>
+	
+<div class="main-content">
+    <!-- Is the 'responsive-image' class defined with appropriate styles in your CSS? -->
+    <img src="cleaning2.jpg" class="responsive-image" alt="clean"> 
+
+    <div id="features-page">
+    <!-- Content for your 'Features' page goes here -->
+    <div class="centered-content d-flex justify-content-center align-items-center">
+        <!-- Ensure your 'd-flex', 'justify-content-center', and 'align-items-center' classes are defined in your CSS -->
+        <h1>Packages</h1>
+    </div>
+
+    <!-- Images container -->
+    <div class="image-container">
+        <!-- These images are the ones you want to fade in one by one -->
+		<img src="pic1.jpg" class="fade-in-image" alt="image1">
+        <img src="pic2.jpg" class="fade-in-image" alt="image2">
+        <img src="pic3.jpg" class="fade-in-image" alt="image3">
+    </div>
+</div>
+    <!-- All other content goes here -->
+</div>
+	
+
+	<!-- Hidden contact form -->
+<div id="contact-form">
+    <!-- Include your form here-->
+    <form>
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+		<div class="form-group">
+			<label for="phone">Phone Number:</label>
+			<input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			<small class="form-text text-muted">Format: 123-456-7890</small>
+		</div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" id="close-form">Close</button> <!-- Close button -->
+    </form>
+</div>
+
+    <!-- Your other content... -->
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="java.js"></script>
+</body>
+</html>
